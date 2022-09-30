@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            function min()
+            {
+            var sayi=window.prompt("dizinin eleman sayisini gir");
+            var i,min;
+            var dizi=[];
+         alert("elemanlari gir");
+            for(i=0; i<sayi; i++)
+            { 
+               dizi[i]=window.prompt("");
+               dizi[i]=Number(dizi[i]);
+            }
+            min=dizi[0];
+            for(i=0; i<sayi-1; i++)
+            {
+               min=(min<dizi[i+1] )? min : dizi[i+1];
+               //kosul ? deger1 : deger2
+               //kosul dogru ise deger1 i, degilse deger2 yi dondur 
+            }
+            alert("min eleman:"+min);
+            }
+            min();
+           
+        </script>
+    </body>
+</html>

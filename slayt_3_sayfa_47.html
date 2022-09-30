@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            funciton find (array,max,data)
+            {
+                var low,mid=0;
+                var high=max-1;
+                while(low<=high)
+                {
+                    mid=(low+high)/2;
+                    if(array[mid]==data);
+                        return mid;
+                        if(array[mid]>data)
+                        high=mid-1;
+                        else
+                        low=mid+1;
+                }
+                return -1;
+            }
+        </script>
+    </body>
+</html>

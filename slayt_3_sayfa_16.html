@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            function ortalama()
+            {
+                 var sayi=window.prompt("dizinin eleman sayisini gir");
+            var i;
+            var dizi=[];
+            var toplam=0;
+            var ortalama;
+            alert("elemanlari gir");
+            for(i=0; i<sayi; i++)
+            { 
+               dizi[i]=window.prompt("");
+               dizi[i]=Number(dizi[i]);
+               //JS de sayilar string olarak tutulur, aritmetik islemler icin once tipi degistirilir
+               //1+2=12    1+2=3
+               toplam+=dizi[i];
+            }
+            ortalama=toplam/sayi;
+            alert("ortalama: "+ortalama);
+            }
+            ortalama();
+           
+        </script>
+    </body>
+</html>
